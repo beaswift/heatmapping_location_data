@@ -37,12 +37,21 @@ This will install the python libraries listed in the requirements.txt file.
 ```
 python heatmap_location_data.py
 ```
-<p>After a moment, a browser window for firefox will pop up with your map, do not interact with it as it is processing a *.png version of your map.  Once the browswer window with the map closes, you will see a map.html file and a map.png file in the "heatmapping_location_data" folder.  The html file can be opened with any major browser.  
+<p>After a moment, a browser window for firefox will pop up with your map, do not interact with it as it is processing a *.png version of your map.  Once the browswer window with the map closes, you will see a map.html file and a map.png file in the "heatmapping_location_data" folder.  The html file can be opened with any major browser.</p>  
 
-![Image](../blob/master/images/map_example.png?raw=true)
+<p>
+    <img src="images/map_example.png" width=30% height=30% />
+    <figcaption>Map With Plotted Points, <em> example of output map.png </em> </figcaption>
+</p>
 
+<p>
+    <img src="images/white_castle_heatmap.png" width=30% height=30% />
+    <figcaption>Heat Map With White Castle selected <em>example of output map.html with heatmap subselection </em> </figcaption>
+</p>
 
-<p>For this example we will are using csv's of the locations of White Castles and Waffle Houses in North America (datasets thanks to http://www.poi-factory.com/). You could substitute any data sets of points you would like to compare by removing the files in "csv_folder" and substituting your own. For each categorical group to be mapped, you would need to place a csv file in the "csv_folder."  Each csv file needs to have columns with the headings: 'latitude', 'longitude', and 'Location Name'.  This program will then go line by line through each csv, plot the given geocoordinates and label the plotted dot with the location name.  It will then create a heat map overlay for each categorical group which you can toggle on and off at the bottom right of the map, and finally a categorical legend for the individual dots so you can differentiate the data points easily.
+<h2>How You Can Change the Datasets Being Mapped</h2>
+
+<p>For this example we are using csv's of the locations of White Castles and Waffle Houses in North America (datasets thanks to http://www.poi-factory.com/). You could substitute any data sets of points you would like to compare by removing the files in "csv_folder" and substituting your own. For each categorical group to be mapped, you would need to place a csv file in the "csv_folder." The categories mapped will be given the label the csv is named (i.e.the "White Castle.csv" file creates the "White Castle" datapoints on the map, and corresponding "White Castle" item in the legend.) Each csv file needs to have columns with the headings: 'latitude', 'longitude', and 'Location Name'.  This program will then go line by line through each csv, plot the given geocoordinates and label the plotted dot with the location name.  It will then create a heat map overlay for each categorical group which you can toggle on and off at the bottom right of the map, and finally a categorical legend for the individual dots so you can differentiate the data points easily.
 <br>
 <p>This program will be looking at the *.csv files stored in the subfolder named "csv_folder" it will utilize the names of the individidual csv files to create the categorical legend for the map and assign a varying color for each csv's plotted points. At the bottom right of the map, there will be layers button.  Clicking on this button will allow you to bring up a heat map display for each data category.  
 <br>
