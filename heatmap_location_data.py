@@ -135,7 +135,7 @@ labels = []
 
 #creates matrix of data to be plotted
 for each in csv_array:
-    name = each.rstrip(".csv")
+    name = each.replace(".csv","")
     df = pd.read_csv(csv_directory + each)
     index_location = csv_array.index(each)
     colors.append(matplotlib_colors[index_location])
