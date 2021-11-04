@@ -37,7 +37,7 @@ This will install the python libraries listed in the requirements.txt file.
 ```
 python heatmap_location_data.py
 ```
-<p>After a moment, a browser window for firefox will pop up with your map, do not interact with it as it is processing a *.png version of your map.  Once the browswer window with the map closes, you will see a map.html file and a map.png file in the "heatmapping_location_data" folder.  The html file can be opened with any major browser.</p>  
+<p>After a moment, a browser window for firefox will pop up with your map, do not interact with it as it is processing a *.png version of your map.  Once the browser window with the map closes, you will see a map.html file and a map.png file in the "heatmapping_location_data" folder.  The html file can be opened with any major browser.</p>  
 
 <p>
     <img src="images/map_example.png" width=30% height=30% />
