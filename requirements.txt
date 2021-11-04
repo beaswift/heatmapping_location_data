@@ -1,0 +1,6 @@
+geckodriver-autoinstaller
+numpy
+selenium
+folium
+pandas
+matplotlib
