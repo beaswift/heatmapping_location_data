@@ -58,7 +58,7 @@ python3 heatmap_location_data.py
     <figcaption>Heat Map With White Castle selected (<em>example of output map.html with heatmap subselection) </em> </figcaption>
 </p>
 
-<h2>How You Can Change the Datasets Being Mapped</h2>
+<h2>Changing datasets</h2>
 
 <p>For this example we are using csv's of the locations of White Castles and Waffle Houses in North America (datasets thanks to http://www.poi-factory.com/). You could substitute any data sets of points you would like to compare by removing the files in "csv_folder" and substituting your own. For each categorical group to be mapped, you would need to place a csv file in the "csv_folder." The categories mapped will be given the label the csv is named (i.e.the "White Castle.csv" file creates the "White Castle" datapoints on the map, and corresponding "White Castle" item in the legend.) Each csv file needs to have columns with the headings: 'latitude', 'longitude', and 'Location Name'.  This program will then go line by line through each csv, plot the given geocoordinates and label the plotted dot with the location name.  It will then create a heat map overlay for each categorical group which you can toggle on and off at the bottom right of the map, and finally a categorical legend for the individual dots so you can differentiate the data points easily.
 <br>
