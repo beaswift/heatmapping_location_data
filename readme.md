@@ -3,11 +3,17 @@
 <p>Recently a member of a Google Group I'm subscribed to asked about software to create heat maps of data which contained geocoordinates.  I did my best to direct her to some Python libraries to handle this, but I realized that I'd like to put something together to empower people to quickly make heat maps.
 <br>
 <h2>Ensure Python 3 and Firefox are Installed</h2>
-<p>Before we begin, make sure you have a version of Python 3 installed and pip.  
-Open a terminal window: 
-    Linux:  Ctrl-Alt-T, Ctrl-Alt-F2
-    Windows:  Win+R > type powershell > Enter/OK
-    MacOS:  Finder > Applications > Utilities > Terminal
+<p>Before we begin, make sure you have a version of Python 3 installed and pip.
+  <br>
+    Open a terminal window: 
+    <ul> 
+        <li>Linux:  Ctrl-Alt-T, Ctrl-Alt-F2</li>
+        <li>Windows:  Win+R > type powershell > Enter/OK</li>
+        <li>MacOS:  Finder > Applications > Utilities > Terminal</li>
+    <ul>
+</p>
+
+<p>
 
 Then enter:
 ``` 
@@ -17,7 +23,7 @@ and
 ```  
 pip3 --version
 ```
-
+</p>
 <p><b>  If these commands lead to a "not found" message, move on to Install Requirements #1 below.</b>  </p>
 
 <p>If these commands bring up a python version greater than 3.4, <b>you do not need to install python3.</b> Move on to Install Requirements #2 below.</p>
