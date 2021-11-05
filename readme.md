@@ -11,42 +11,51 @@ Open a terminal window:
 
 Then enter:
 ``` 
-python --version
+python3 --version
 ```
 and
 ```  
-pip --version
+pip3 --version
 ```
-You will also need to install Firefox to run this program (https://www.mozilla.org/en-US/firefox/new/).  Firefox will be interacted with by the geckodriver to display the created html and export a *.png file of the map.
+
+<p><b>  If these commands lead to a "not found" message, move on to Install Requirements #1 below.</b>  </p>
+
+<p>If these commands bring up a python version greater than 3.4, <b>you do not need to install python3.</b> Move on to Install Requirements #2 below.</p>
+
 <h2>Install Requirements</h2>
 <br>
-Your version of Python should begin with a 3, if it does not please go to https://www.python.org/downloads/ and install a release of Python which is version 3.8 or greater.
-
-If pip is not a recognized command, please go to https://pip.pypa.io/en/stable/installation/ and follow the instructions for installation, however pip should already be included if you have Python 3.4 or greater.
+<ol><li>Your version of Python should be 3.4 or greater, if it is not please go to https://www.python.org/downloads/ and install a release of Python which is version 3.4 or greater.
+<br><br>
+pip is included in versions of Python 3.4 or greater, so we will not need to install that separately.  </li>
 <br>
-Now back into the terminal window, change to the directory where the files from this repository are stored (for example: "cd ~/Documents/heatmapping_location_data/" or wherever you have stored the "heatmapping_location_data" folder), and type:
-```
-pip install -r requirements.txt
-```
-This will install the python libraries listed in the requirements.txt file.
+<li>If you do not already have it installed, you will also need to install Firefox to run this program (https://www.mozilla.org/en-US/firefox/new/). Firefox will be interacted with by the geckodriver to display the created html and export a *.png file of the map.</li>
+<br>
+<li>Now back into the terminal window, change to the directory where the files from this repository are stored (for example: "cd ~/Documents/heatmapping_location_data/" or wherever you have stored the "heatmapping_location_data" folder), and type:
 
+```
+pip3 install -r requirements.txt
+```
+
+<br>This will install the python libraries listed in the requirements.txt file.
+</li>
+<br><br>
 <h2>Create Your Heatmap</h2>
 <br>
 <p>While still in the "heatmapping_location_data" folder in the terminal, type:
 
 ```
-python heatmap_location_data.py
+python3 heatmap_location_data.py
 ```
 <p>After a moment, a browser window for firefox will pop up with your map, do not interact with it as it is processing a *.png version of your map.  Once the browser window with the map closes, you will see a map.html file and a map.png file in the "heatmapping_location_data" folder.  The html file can be opened with any major browser.</p>  
 
 <p>
     <img src="images/map_example.png" width=30% height=30% />
-    <figcaption>Map With Plotted Points, <em> example of output map.png </em> </figcaption>
+    <figcaption>Map With Plotted Points, (<em> example of output map.png) </em> </figcaption>
 </p>
 
 <p>
     <img src="images/white_castle_heatmap.png" width=30% height=30% />
-    <figcaption>Heat Map With White Castle selected <em>example of output map.html with heatmap subselection </em> </figcaption>
+    <figcaption>Heat Map With White Castle selected (<em>example of output map.html with heatmap subselection) </em> </figcaption>
 </p>
 
 <h2>How You Can Change the Datasets Being Mapped</h2>
